@@ -6,14 +6,14 @@ $theme_dark_text_color:       rgba(255,255,255,.7);
 html {
 	scroll-behavior: smooth;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5{
   font-weight: bold !important;
 }
 .main-content {
   overflow: hidden; // fix overflow issue caused by animate.css
 }
 .header-content{
-  background: white;
+  background:#f5f5f5;
     color: black;
     border-radius: 5px;
     width: 50%;
@@ -76,7 +76,9 @@ h1, h2, h3, h4 {
     }
   }
 }
-
+.bg-gray{
+  background:#f5f5f5;
+}
 .section-testimonials {
   background-color: $gray-800;
   padding: 80px 10px 45px;
