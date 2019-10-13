@@ -3,9 +3,27 @@ $theme_dark_text_color:       rgba(255,255,255,.7);
 
 /*==========  page  ==========*/
 
-
+html {
+	scroll-behavior: smooth;
+}
+h1, h2, h3, h4 {
+  font-weight: bold !important;
+}
 .main-content {
   overflow: hidden; // fix overflow issue caused by animate.css
+}
+.header-content{
+  background: white;
+    color: black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 7px;
+    p{
+      color:black
+    }
+    h2{
+      font-weight: bold;
+    }
 }
 
 .section-heading-underline {
@@ -35,13 +53,13 @@ $theme_dark_text_color:       rgba(255,255,255,.7);
   text-align: center;
 
   h2 {
-    font-weight: $font-weight-light;
+    font-weight:bold;
     font-size: 2.75rem;
     margin-bottom: 1.625rem;
   }
 
   .lead {
-    color: rgba($white,.7);
+    color: black;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -235,9 +253,15 @@ $theme_dark_text_color:       rgba(255,255,255,.7);
 .faq {
   background-color: $bg_section_faq;
   padding: 7em 2em 5em;
+  hr{
+    width:20%
+  }
 
   ul.faq-list {
     padding: 0;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
   }
   li {
     list-style-type: none;
@@ -257,6 +281,7 @@ $theme_dark_text_color:       rgba(255,255,255,.7);
     margin-bottom: .6em;
     font-size: 21px;
     line-height: 1.6em;
+    font-weight: bold;
   }
 
   .faq-a {
@@ -285,3 +310,5 @@ $theme_dark_text_color:       rgba(255,255,255,.7);
   padding: 30px 0;
   font-size: 12px;
 }
+
+

@@ -635,8 +635,25 @@ a.btn-icon-v2,
   animation-duration: 2s; }
 
 /*==========  page  ==========*/
+html {
+  scroll-behavior: smooth; }
+
+h1, h2, h3, h4 {
+  font-weight: bold !important; }
+
 .main-content {
   overflow: hidden; }
+
+.header-content {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  width: 50%;
+  padding: 7px; }
+  .header-content p {
+    color: black; }
+  .header-content h2 {
+    font-weight: bold; }
 
 .section-heading-underline {
   margin: 0;
@@ -661,11 +678,11 @@ a.btn-icon-v2,
   background-color: #343a40;
   text-align: center; }
   .cover h2 {
-    font-weight: 300;
+    font-weight: bold;
     font-size: 2.75rem;
     margin-bottom: 1.625rem; }
   .cover .lead {
-    color: rgba(255, 255, 255, 0.7);
+    color: black;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto; }
@@ -805,8 +822,13 @@ a.btn-icon-v2,
 .faq {
   background-color: #f5f5f5;
   padding: 7em 2em 5em; }
+  .faq hr {
+    width: 20%; }
   .faq ul.faq-list {
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .faq li {
     list-style-type: none;
     margin-bottom: 1.6em;
@@ -822,7 +844,8 @@ a.btn-icon-v2,
   .faq h4 {
     margin-bottom: .6em;
     font-size: 21px;
-    line-height: 1.6em; }
+    line-height: 1.6em;
+    font-weight: bold; }
   .faq .faq-a {
     font-size: 16px;
     line-height: 1.6em; }
