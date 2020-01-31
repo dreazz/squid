@@ -337,3 +337,12 @@ h1, h2, h3, h4, h5{
 }
 
 
+#email{
+  display:flex;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 10000;
+}
