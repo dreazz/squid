@@ -255,18 +255,13 @@
     
   
     <div >
-      <p class="scrollreveal">Get in touch with us!</p>
-      <form class="scrollreveal" id="email" netlify name="contact" style="background: url(images/covers/bench-accounting-49909-unsplash-lg.jpg) repeat-y center center; background-size: cover;">
-        <fieldset>
-          <div class="form-group">
-            <div class="ui-input-group">
-              <input class="form-control" id="name_2" name="email" type="text" required><span
-                class="input-bar"></span>
-              <label>Email</label>
-            </div>
-          </div><button class="btn btn-primary btn-cta btn-raised ui-wave" href="javascript:;"
-            type="submit"><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1607732&conversionId=1528514&fmt=gif" />send</button>
-        </fieldset>
+      <form id="email" name="contact" method="POST" data-netlify="true">
+        
+          <h5>Contact us: </h5><input placeholder="youremail@example.com"class="email-input" type="email" name="email" required />
+        
+       
+          <button class="btn btn-primary btn-cta btn-raised ui-wave" type="submit">Send</button>
+       
       </form>
   </div>
     <script src="scripts/app.js"></script>
